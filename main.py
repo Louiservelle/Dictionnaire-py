@@ -4,8 +4,8 @@ from modules.insertions import insert
 from modules.rechercher import recherche
 
 
-dictionnaire = {}
-file = open("dictionnaire.txt", "a")
+dictionnaire = []
+
 menu_options = {
     1: "Ajout d'un mot",
     2: "Suppression d'un mot",
@@ -18,24 +18,20 @@ def print_menu():
     for key in menu_options.keys():
         print (key, '-', menu_options[key] )
 
-
-while True:
+choix = 1;
+while choix != 0:
     print_menu()
     choix = int(input("Entre ton choix :"))
     match choix:
         case 1:
             insert()
-            print_menu()
-            break
         case 2:
             suppr()
-            break
         case 3:
             recherche()
-            break
         case 4:
             affichage()
-            break
         case 0:
             break
+
 
