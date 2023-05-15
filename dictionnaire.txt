@@ -3,3 +3,7 @@ t#taper#frapper des gens
 d#dada#dada
 f#frapper#action de taper quelq'un
 a#attaquer#frapper quelq'un
+a#amour#aimer la personne
+t#tuer#enlever la vie
+a#arreter#stoper
+c#conduire#action de controler une chose

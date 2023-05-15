@@ -11,8 +11,8 @@ def insert():
     if(word.isdigit()):
         print("Mauvaise saisie !")
         insert()   
-    elif(recherche()):
-        print("Le mot existe déja dans le dictionnaire !")
     else:
         file.write(f"{word[0]}#{word}#{definitions}\n")
-        
+
+#    elif(recherche()):
+#print("Le mot existe déja dans le dictionnaire !")

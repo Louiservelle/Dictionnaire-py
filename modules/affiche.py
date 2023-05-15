@@ -2,8 +2,8 @@
 def affichage():
     dictionnaire = []
     print("affichage")
-    file = open("dictionnaire.txt", "r")  #j'ouvre le fichier en mode lecture
-    for ligne in file: #je parcours toute les lignes de mon documents
+    file = open("dictionnaire.txt", "r")
+    for ligne in file:
         firstletter, word, definition = ligne.strip().split("#")
         dictionnaire.append({"firstletter": firstletter,"word": word, "definition": definition})
     dictionnaire = sorted(dictionnaire, key=lambda dictionnaire: dictionnaire["firstletter"])

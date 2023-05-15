@@ -28,7 +28,7 @@ while choix != 0:
         case 2:
             suppr()
         case 3:
-            recherche()
+            recherche("dictionnaire.txt")
         case 4:
             affichage()
         case 0:
