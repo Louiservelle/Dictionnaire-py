@@ -9,6 +9,6 @@ def affichage():
     dictionnaire = sorted(dictionnaire, key=lambda dictionnaire: dictionnaire["firstletter"])
     for dictionnaire in dictionnaire:
         nbwords = len(dictionnaire)
-        print(f"Mot: {dictionnaire['word']} || Definition: {dictionnaire['definition']}")
+        print(f"Mot: {dictionnaire['word']} || Definition: {dictionnaire['definition']}\n")
     print(f"Il y a actuellement : {nbwords} mots inscrit dans le dictionnaire\n")
     file.close()
