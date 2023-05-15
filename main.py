@@ -5,7 +5,7 @@ from modules.rechercher import recherche
 
 
 dictionnaire = {}
-
+file = open("dictionnaire.txt", "a")
 menu_options = {
     1: "Ajout d'un mot",
     2: "Suppression d'un mot",
