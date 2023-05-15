@@ -1,0 +1,3 @@
+
+def affichage():
+    print("affichage")
