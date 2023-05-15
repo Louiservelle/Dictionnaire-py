@@ -7,3 +7,5 @@ a#amour#aimer la personne
 t#tuer#enlever la vie
 a#arreter#stoper
 c#conduire#action de controler une chose
+a#aimer#adorer la personne
+v#voler#s'envoler ou derober un objet
