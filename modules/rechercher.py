@@ -1,3 +1,3 @@
 
 def recherche():
-    print("Recherche")
+    return True

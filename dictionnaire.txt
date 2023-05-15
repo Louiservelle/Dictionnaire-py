@@ -1,5 +1,5 @@
-d#dormir#je dors bien
-a#aled#help
-d#dada#sautb#bagarre#taper des gens
-b#bagarre#taper des gens
-
+d#dormir#je fais dodo
+t#taper#frapper des gens
+d#dada#dada
+f#frapper#action de taper quelq'un
+a#attaquer#frapper quelq'un
