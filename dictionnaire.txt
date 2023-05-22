@@ -9,3 +9,4 @@ c#conduire#action de controler une chose
 a#aimer#adorer la personne
 v#voler#s'envoler ou derober un objet
 m#moulaga#argent
+t#test#l'action d'essayer
