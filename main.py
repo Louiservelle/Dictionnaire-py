@@ -31,8 +31,9 @@ while choix != 0:
             suppr()
         case 3:
             mot = input("Entrez un mot : ")
+            # on verrifie si le mot est valide
             resultat, dictionnaire = recherche(mot)
-            if (resultat):
+            if (resultat):  # si le mot est valide on l'affiche
                 affichage(dictionnaire)
             else:
                 print("mot inexistant !")
