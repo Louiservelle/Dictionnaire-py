@@ -1,14 +1,7 @@
-def recherche(motTest):
-    dictionnaire = []
-    file = open("dictionnaire.txt", "r")  # j'ouvre le fichier en mode lecture
-    for ligne in file:  # je parcours toute les lignes de mon documents
-        # je sépare chaque infos séparer d'une virgule
-        lettre, mot, definition = ligne.strip().split("#")
-        # je fait un dictionnaire clef valeurs via mais input
-        dictionnaire.append(
-            {"lettre": lettre, "mot": mot, "definition": definition})
-    file.close()  # je ferme le fichier
+from modules.decode import decode
 
+
+def recherche(motTest, dictionnaire):
     # je recuperer la premiere lettre du mot passée en argument
     premiereLettre = motTest[0]
     # cette liste vite va permettre de stocker un dictionaire de chaque mot qui commance par la meme lettre que le mot a rechercher.

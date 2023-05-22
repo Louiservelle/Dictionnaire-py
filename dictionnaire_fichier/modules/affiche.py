@@ -1,3 +1,6 @@
+from modules.decode import decode
+
+
 def affichage(dictionnaireTrue=None):
     dictionnaire = []
     nbwords = 0
@@ -7,6 +10,8 @@ def affichage(dictionnaireTrue=None):
     for ligne in file:
         nbwords += 1
         lettre, mot, definition = ligne.strip().split("#")
+        mot, definition = decode(mot, definition)
+
         dictionnaire.append(
             {"lettre": lettre, "mot": mot, "definition": definition})
     dictionnaire = sorted(
