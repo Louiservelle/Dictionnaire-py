@@ -5,7 +5,7 @@ from modules.encode import encode
 def suppr(dictionnaireGlobal):
     word = input("Quel mot souhaiter vous supprimer ?\n")
     # On appele la fonction recherche pour rechercher si le mot existe
-    resultat, dictionnaire = recherche(word)
+    resultat, dictionnaire = recherche(word, dictionnaireGlobal)
     if (resultat):
         for i in range(len(dictionnaireGlobal)):
             if (dictionnaire == dictionnaireGlobal[i]):  # On suprime la ligne

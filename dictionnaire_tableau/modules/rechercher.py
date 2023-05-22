@@ -1,4 +1,5 @@
 from modules.decode import decode
+from modules.encode import encode
 
 
 def recherche(motTest, dictionnaire):
@@ -6,6 +7,8 @@ def recherche(motTest, dictionnaire):
     premiereLettre = motTest[0]
     # cette liste vite va permettre de stocker un dictionaire de chaque mot qui commance par la meme lettre que le mot a rechercher.
     getGroupe = []
+    definition = ""
+    motTest, definition = encode(motTest, definition)
 
     dictionnaire = sorted(
         dictionnaire, key=lambda dictionnaire: dictionnaire["lettre"])  # on trie les lignes en fonction des lettre donc par ordre alphabetique
